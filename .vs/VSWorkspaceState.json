@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\client",
+    "\\client\\src",
+    "\\client\\src\\pages",
+    "\\client\\src\\pages\\AdminInfo",
+    "\\client\\src\\pages\\Doctor",
+    "\\config",
+    "\\middlewares",
+    "\\models",
+    "\\routes"
+  ],
+  "PreviewInSolutionExplorer": false
+}
