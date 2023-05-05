@@ -9,7 +9,6 @@ const path = require("path");
 
 app.use('/api/user', uRoute)
 app.use('/api/AdminInfo', aRoute)
-const port = process.env.PORT || 5000;
 
 if(process.env.NODE_ENV === 'production')
 {
@@ -20,6 +19,6 @@ if(process.env.NODE_ENV === 'production')
     );
 }
 
-
-
-app.listen(port, () => console.log(`Node MongoDB server started at ${port}`));
+app.listen(process.env.PORT || 3000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
